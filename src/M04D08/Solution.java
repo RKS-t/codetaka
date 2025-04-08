@@ -1,6 +1,21 @@
 package M04D08;
 
 public class Solution {
+    public int solution(int n) {
+
+        StringBuilder sb= new StringBuilder();
+
+        String n3 = Integer.toString(n, 3);
+        int[] arr = n3.chars().map(c-> c - '0').toArray();
+        int[] arr2 = new int[arr.length];
+
+        for(int i = 0; i < arr.length; i++){
+            sb.append(arr[arr.length-i-1]);
+        }
+
+        int answer = Integer.parseInt(sb.toString(), 3);
+        return answer;
+    }
 }
 
 
