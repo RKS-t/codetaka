@@ -1,4 +1,4 @@
-package M04D08;
+package m04d08;
 
 public class Solution {
     public int solution(int n) {
